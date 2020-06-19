@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CardList from "./components/CardList";
 import SearchBox from "./components/SearchBox";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -35,6 +36,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
         <SearchBox
           onSearchFieldChange={this.onSearchFieldChange}
           placeholder="Search Monsters"
